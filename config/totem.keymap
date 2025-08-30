@@ -26,6 +26,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    behaviors {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
