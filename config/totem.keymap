@@ -24,7 +24,29 @@
 #define ADJ  3
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_0 {
+            bindings = <&to 0>;
+            key-positions = <13 16>;
+        };
+
+        to_1 {
+            bindings = <&to 1>;
+            key-positions = <12 17>;
+        };
+
+        to_2 {
+            bindings = <&to 2>;
+            key-positions = <11 18>;
+        };
+
+        to_3 {
+            bindings = <&to 3>;
+            key-positions = <10 19>;
+        };
+    };
 
     behaviors {
         td_spc_ret: td_spc_ret {
