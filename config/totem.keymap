@@ -49,23 +49,23 @@
     };
 
     behaviors {
-        td_spc_ret: td_spc_ret {
+        tdSpRe: tdSpRe {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SPC_RET";
+            label = "TDSPRE";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
         };
 
-        td_bks_del: td_bks_del {
+        tdBkDe: tdBkDe {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_BKS_DEL";
+            label = "TDBKDE";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DEL>;
         };
 
-        td_sh_ca_lo: td_sh_ca_lo {
+        tdShCwCa: tdShCwCa {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SH_CA_LO";
+            label = "TDSHCWCA";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kt LEFT_SHIFT>;
         };
@@ -93,10 +93,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp Q  &kp W  &kp E    &kp R        &kp T          &kp Y        &kp U    &kp I      &kp O    &kp P
-          &kp A  &kp S  &kp D    &kp F        &kp G          &kp H        &kp J    &kp K      &kp L    &kp SEMICOLON
-&kp BSLH  &kp Z  &kp X  &kp C    &kp V        &kp B          &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
-                        &kp DEL  &lt NAV TAB  &td_spc_ret    &td_bks_del  &kp DEL  &kp BSPC
+           &kp Q  &kp W  &kp E    &kp R        &kp T      &kp Y    &kp U    &kp I      &kp O    &kp P
+           &kp A  &kp S  &kp D    &kp F        &kp G      &kp H    &kp J    &kp K      &kp L    &kp SEMICOLON
+&tdShCwCa  &kp Z  &kp X  &kp C    &kp V        &kp B      &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
+                         &kp DEL  &lt NAV TAB  &tdSpRe    &tdBkDe  &kp DEL  &kp BSPC
             >;
         };
 
