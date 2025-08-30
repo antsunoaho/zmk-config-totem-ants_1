@@ -62,6 +62,13 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DEL>;
         };
+
+        td_sh_ca_lo: td_sh_ca_lo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SH_CA_LO";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kt LEFT_SHIFT>;
+        };
     };
 
     keymap {
