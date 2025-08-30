@@ -33,6 +33,13 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
         };
+
+        td_bksp_del: td_bksp_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BKSP_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>, <&none>;
+        };
     };
 
     keymap {
@@ -57,10 +64,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp Q  &kp W  &kp E    &kp R        &kp T               &kp Y          &kp U    &kp I      &kp O    &kp P
-          &kp A  &kp S  &kp D    &kp F        &kp G               &kp H          &kp J    &kp K      &kp L    &kp SEMICOLON
-&kp BSLH  &kp Z  &kp X  &kp C    &kp V        &kp B               &kp N          &kp M    &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
-                        &kp DEL  &lt NAV TAB  &td_space_return    &kp BACKSPACE  &kp DEL  &kp BSPC
+          &kp Q  &kp W  &kp E    &kp R        &kp T               &kp Y         &kp U    &kp I      &kp O    &kp P
+          &kp A  &kp S  &kp D    &kp F        &kp G               &kp H         &kp J    &kp K      &kp L    &kp SEMICOLON
+&kp BSLH  &kp Z  &kp X  &kp C    &kp V        &kp B               &kp N         &kp M    &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
+                        &kp DEL  &lt NAV TAB  &td_space_return    &td_bksp_del  &kp DEL  &kp BSPC
             >;
         };
 
