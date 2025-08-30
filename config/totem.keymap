@@ -74,6 +74,20 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kt LEFT_SHIFT>;
         };
+
+        tdCoSe: tdCoSe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDCOSE";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        };
+
+        tdDoCo: tdDoCo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDDOCO";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        };
     };
 
     keymap {
