@@ -106,6 +106,34 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        tdAe: tdAe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDAE";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp SQT>;
+        };
+
+        tdOe: tdOe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDOE";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp SEMICOLON>;
+        };
+
+        tdUe: tdUe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDUE";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LEFT_BRACKET>;
+        };
+
+        tdSs: tdSs {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDSS";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp MINUS>;
+        };
     };
 
     keymap {
@@ -130,8 +158,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E                   &kp R               &kp T      &kp Y    &kp U              &kp I           &kp O    &kp P
-           &kp A  &kp S  &kp D                   &kp F               &kp G      &kp H    &kp J              &kp K           &kp L    &kp SEMICOLON
+           &kp Q  &kp W  &kp E                   &kp R               &kp T      &kp Y    &tdUe              &kp I           &tdUe    &kp P
+           &tdAe  &tdSs  &kp D                   &kp F               &kp G      &kp H    &kp J              &kp K           &kp L    &kp SEMICOLON
 &tdShCwCa  &kp Z  &kp X  &kp C                   &kp V               &kp B      &kp N    &kp M              &tdCoSe         &tdDoCo  &kp FSLH       &kp SQT
                          &mt LEFT_CONTROL CARET  &mt LEFT_ALT TILDE  &tdSpRe    &tdBkDe  &mt RIGHT_ALT TAB  &mt RCTRL HASH
             >;
