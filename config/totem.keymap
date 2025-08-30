@@ -46,6 +46,11 @@
             bindings = <&to 3>;
             key-positions = <10 19>;
         };
+
+        LgSp {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <16 17>;
+        };
     };
 
     behaviors {
