@@ -51,6 +51,16 @@
             bindings = <&to 0>;
             key-positions = <13 16>;
         };
+
+        mo_2_code_l {
+            bindings = <&mo 2>;
+            key-positions = <34 33>;
+        };
+
+        mo_2_code_r {
+            bindings = <&mo 2>;
+            key-positions = <35 36>;
+        };
     };
 
     behaviors {
@@ -156,10 +166,10 @@
             >;
         };
 
-        nav_layer {
+        coding_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "CODE";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -173,10 +183,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo 3     &kp KP_N0  &trans
+        &kp ESC    &bt BT_CLR  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LBRC    &kp RBRC  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp BSLH           &kp EQUAL      &kp LBKT    &kp RBKT  &kp EQUAL         &kp FSLH          &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp PIPE           &kp MINUS      &kp LPAR    &kp RPAR  &kp PLUS          &kp HASH          &kp KP_N3  &kp KP_MULTIPLY  &trans
+                               &trans             &trans         &trans      &mo 3     &kp KP_N0         &trans
             >;
         };
 
