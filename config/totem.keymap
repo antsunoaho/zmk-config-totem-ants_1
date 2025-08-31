@@ -157,7 +157,7 @@
             >;
         };
 
-        symbol_layer {
+        num_layer {
             bindings = <
         &trans   &trans  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SEMICOLON  &trans
         &kp SQT  &trans  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans         &trans
