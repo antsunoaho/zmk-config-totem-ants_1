@@ -177,17 +177,17 @@
             bindings = <
            &kp Q  &kp W  &kp E                      &kp R               &kp T      &kp Y    &tdUe              &kp I                  &tdOe    &kp P
            &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L    &kp SEMICOLON
-&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &tdCoSe                &tdDoCo  &kp FSLH       &kp SQT
+&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &tdCoSe                &tdDoCo  &kp FSLH       &kp ESCAPE
                          &mt LEFT_CONTROL QUESTION  &mt LEFT_ALT TILDE  &tdSpRe    &tdBkDe  &mt RIGHT_ALT TAB  &mt RCTRL EXCLAMATION
             >;
         };
 
         num_layer {
             bindings = <
-        &trans   &trans  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SEMICOLON  &trans
-        &kp SQT  &trans  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans         &trans
-&trans  &trans   &trans  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans  &trans
-                         &trans        &kp NUMBER_0  &trans          &trans           &kp KP_NUMBER_0  &trans
+        &trans   &kp N9  &kp N8  &kp N7    &kp PLUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+        &kp SQT  &kp N6  &kp N5  &kp N4    &kp MINUS       &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans  &trans   &kp N3  &kp N2  &kp N1    &kp ASTERISK    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                         &kp N0  &kp FSLH  &kp ENTER       &kp KP_ENTER  &kp FSLH         &kp KP_NUMBER_0
             >;
         };
 
@@ -208,10 +208,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE  &kp DOLLAR    &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LBRC    &kp RBRC  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp PERCENT      &kp KP_PLUS
-        &kp CARET  &kp QUESTION  &kp BSLH           &kp EQUAL      &kp LBKT    &kp RBKT  &kp UNDERSCORE    &kp FSLH          &kp EXCLAMATION  &kp AT_SIGN
-&trans  &kp DEL    &kp TILDE     &kp PIPE           &kp MINUS      &kp LPAR    &kp RPAR  &kp PLUS          &kp ASTERISK      &kp HASH         &kp KP_MULTIPLY  &trans
-                                 &trans             &trans         &trans      &mo 3     &kp KP_N0         &trans
+            &kp GRAVE  &kp DOLLAR    &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LBRC    &kp RBRC  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp PERCENT      &kp KP_PLUS
+            &kp CARET  &kp QUESTION  &kp BSLH           &kp EQUAL      &kp LBKT    &kp RBKT  &kp UNDERSCORE    &kp FSLH          &kp EXCLAMATION  &kp AT_SIGN
+&kp ESCAPE  &kp DEL    &kp TILDE     &kp PIPE           &kp MINUS      &kp LPAR    &kp RPAR  &kp PLUS          &kp ASTERISK      &kp HASH         &kp KP_MULTIPLY  &kp ESCAPE
+                                     &trans             &trans         &trans      &mo 3     &kp KP_N0         &trans
             >;
         };
 
