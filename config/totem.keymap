@@ -66,6 +66,26 @@
             bindings = <&mo 2>;
             key-positions = <35 36>;
         };
+
+        to_5 {
+            bindings = <&to 5>;
+            key-positions = <14 15>;
+        };
+
+        to_4 {
+            bindings = <&to 4>;
+            key-positions = <4 5>;
+        };
+
+        to_6 {
+            bindings = <&to 6>;
+            key-positions = <25 26>;
+        };
+
+        to_7 {
+            bindings = <&to 7>;
+            key-positions = <20 31>;
+        };
     };
 
     behaviors {
