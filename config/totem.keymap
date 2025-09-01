@@ -21,7 +21,7 @@
 
 // #include "combos.dtsi" // Must be sourced after HRM-combo hack.
 // #include "leader.dtsi"
-#include "mouse.dtsi"
+// #include "mouse.dtsi"
 
 #define BASE 0
 #define NAV  1
