@@ -212,7 +212,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &kp B     &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
@@ -224,7 +224,7 @@
         &kp PAGE_UP     &mkp MB5        &mmv MOVE_UP    &mkp MB4         &msc SCRL_UP       &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &kp PAGE_UP
         &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &trans  &kp PAGE_DOWN   &mkp RCLK       &mkp MCLK       &mkp LCLK        &msc SCRL_DOWN     &msc SCRL_DOWN  &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp PAGE_DOWN    &trans
-                                        &trans          &trans           &trans             &trans          &trans          &trans
+                                        &mkp RCLK       &mkp MCLK        &mkp LCLK          &mkp LCLK       &mkp MCLK       &mkp RCLK
             >;
         };
 
