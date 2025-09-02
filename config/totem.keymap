@@ -153,6 +153,15 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp MINUS>;
         };
+
+        tdCircAcuteGrave: tdCircAcuteGrave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDCIRCACUTEGRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp EQUAL>, <&kp PLUS>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -178,8 +187,8 @@
 
             bindings = <
            &kp Q  &kp W  &kp E                      &kp R               &kp T      &kp Y    &tdUe              &kp I                  &tdOe    &kp P
-           &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L    &kp SEMICOLON
-&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &tdCoSe                &tdDoCo  &kp FSLH       &kp ESCAPE
+           &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L    &kp AT_SIGN
+&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &tdCoSe                &tdDoCo  &tdCircAcuteGrave  &kp ESCAPE
                          &mt LEFT_CONTROL QUESTION  &mt LEFT_ALT TILDE  &tdSpRe    &tdBkDe  &mt RIGHT_ALT TAB  &mt RCTRL EXCLAMATION
             >;
         };
