@@ -48,12 +48,12 @@
         };
 
         to1l {
-            bindings = <&to 1>;
+            bindings = <&to 3>;
             key-positions = <1 11>;
         };
 
         to1r {
-            bindings = <&to 1>;
+            bindings = <&to 3>;
             key-positions = <8 18>;
         };
 
@@ -68,52 +68,52 @@
         };
 
         to3l {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <3 13>;
         };
 
         to3r {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <6 16>;
         };
 
         to4l {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <21 10>;
         };
 
         to4r {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <30 19>;
         };
 
         to5l {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <11 22>;
         };
 
         to5r {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <29 18>;
         };
 
         to6l {
-            bindings = <&to 6>;
+            bindings = <&to 7>;
             key-positions = <23 12>;
         };
 
         to6r {
-            bindings = <&to 6>;
+            bindings = <&to 7>;
             key-positions = <28 17>;
         };
 
         to7l {
-            bindings = <&to 7>;
+            bindings = <&to 8>;
             key-positions = <24 13>;
         };
 
         to7r {
-            bindings = <&to 7>;
+            bindings = <&to 8>;
             key-positions = <27 16>;
         };
 
@@ -213,7 +213,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        base_0 {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -237,15 +237,14 @@
             >;
         };
 
-        num_layer {
+        base_rev_1 {
+            label = "BASEREV";
             bindings = <
-        &kp LEFT_ALT  &kp N9  &kp N8  &kp N7    &kp PLUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_ALT
-        &trans        &kp N6  &kp N5  &kp N4    &kp MINUS       &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
-&trans  &trans        &kp N3  &kp N2  &kp N1    &kp ASTERISK    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
-                              &kp N0  &kp FSLH  &kp ENTER       &kp KP_ENTER  &kp FSLH         &kp KP_NUMBER_0
+         &tdPUePlus     &tdOe    &kp I                         &tdUe         &kp Y      &kp T    &kp R               &kp E               &kp W  &kp Q
+         &kp SEMICOLON  &kp L    &kp K                         &kp J         &kp H      &kp G    &kp F               &kp D               &tdSs  &tdAe
+&kp SQT  &kp FSLH       &kp DOT  &kp COMMA                     &kp M         &kp N      &kp B    &kp V               &kp C               &kp X  &kp Z  &tdShCwCa
+                                 &mt LEFT_CONTROL EXCLAMATION  &mt RALT TAB  &tdBkDe    &tdSpRe  &mt LEFT_ALT TILDE  &mt RCTRL QUESTION
             >;
-
-            label = "NUM";
         };
 
         coding_layer {
@@ -270,6 +269,17 @@
 &kp ESCAPE  &kp DEL    &kp TILDE     &kp PIPE           &kp MINUS        &kp LPAR            &kp RPAR           &kp PLUS          &kp ASTERISK      &kp HASH         &kp KP_MULTIPLY  &kp ESCAPE
                                      &kp LEFT_ARROW     &kp RIGHT_ARROW  &kp LEFT_CONTROL    &kp RIGHT_CONTROL  &kp UP_ARROW      &kp DOWN_ARROW
             >;
+        };
+
+        num_layer {
+            bindings = <
+        &kp LEFT_ALT   &kp N9  &kp N8  &kp N7    &kp PLUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_ALT
+        &kp RIGHT_ALT  &kp N6  &kp N5  &kp N4    &kp MINUS       &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_ALT
+&trans  &trans         &kp N3  &kp N2  &kp N1    &kp ASTERISK    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
+                               &kp N0  &kp FSLH  &kp ENTER       &kp KP_ENTER  &kp FSLH         &kp KP_NUMBER_0
+            >;
+
+            label = "NUM";
         };
 
         fn_layer {
