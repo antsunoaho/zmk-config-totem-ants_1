@@ -320,10 +320,10 @@
 
         nav_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &trans  &trans
+        &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &trans  &trans
+&trans  &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &trans  &trans  &trans
+                        &trans                                      &trans                                  &trans    &trans  &trans                                  &trans
             >;
 
             label = "NAV";
