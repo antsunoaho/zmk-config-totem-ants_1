@@ -162,6 +162,15 @@
 
             tapping-term-ms = <300>;
         };
+
+        tdPUePlus: tdPUePlus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDPUEPLUS";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LEFT_BRACKET>, <&kp PLUS>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -186,9 +195,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E                      &kp R               &kp T      &kp Y    &tdUe              &kp I                  &tdOe    &kp P
-           &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L    &kp AT_SIGN
-&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &tdCoSe                &tdDoCo  &tdCircAcuteGrave  &kp ESCAPE
+           &kp Q  &kp W  &kp E                      &kp R               &kp T      &kp Y    &tdUe              &kp I                  &tdOe       &tdPUePlus
+           &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L       &kp SEMICOLON
+&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &kp COMMA              &kp PERIOD  &kp SLASH      &kp SQT
                          &mt LEFT_CONTROL QUESTION  &mt LEFT_ALT TILDE  &tdSpRe    &tdBkDe  &mt RIGHT_ALT TAB  &mt RCTRL EXCLAMATION
             >;
         };
