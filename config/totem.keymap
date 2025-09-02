@@ -47,7 +47,7 @@
             key-positions = <10 19>;
         };
 
-        LgSp {
+        WinSp {
             bindings = <&kp LG(SPACE)>;
             key-positions = <16 17>;
         };
@@ -94,6 +94,8 @@
             label = "TDSPRE";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
+
+            tapping-term-ms = <300>;
         };
 
         tdBkDe: tdBkDe {
