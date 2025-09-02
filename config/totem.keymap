@@ -283,21 +283,21 @@
         };
 
         nav_layer {
-            label = "NAV";
+            label = "SYS";
             bindings = <
-        &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &trans  &trans
-        &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &trans  &trans
-&trans  &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &trans    &trans  &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &trans  &trans  &trans
-                        &trans                                      &trans                                  &trans    &trans  &trans                                  &trans
+        &studio_unlock  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &sys_reset     &sys_reset   &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &trans  &studio_unlock
+        &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &bootloader    &bootloader  &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &trans  &trans
+&soft_off  &trans  &trans  &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &trans         &trans       &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &trans  &trans  &soft_off
+                        &trans                                      &trans                                  &trans         &trans       &trans                                  &trans
             >;
         };
 
         sys_layer {
-            label = "SYS";
+            label = "NAV";
             bindings = <
-           &studio_unlock  &trans  &trans  &trans  &sys_reset     &sys_reset   &trans  &trans  &trans  &studio_unlock
-           &trans          &trans  &trans  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
-&soft_off  &trans          &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans          &soft_off
+           &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans
+           &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans          &trans
                                    &trans  &trans  &trans         &trans       &trans  &trans
             >;
         };
