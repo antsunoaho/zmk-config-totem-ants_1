@@ -132,6 +132,16 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <4 3>;
         };
+
+        winShSL {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <32 33>;
+        };
+
+        winShSR {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <37 36>;
+        };
     };
 
     behaviors {
@@ -212,6 +222,36 @@
 
             tapping-term-ms = <300>;
         };
+
+        tdNextPrevGrp: tdNextPrevGrp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDNEXTPREVGRP";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP>,
+                <&kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP>;
+        };
+
+        tdNextPrev: tdNextPrev {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDNEXTPREV";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp C_KEYBOARD_INPUT_ASSIST_NEXT>,
+                <&kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS>;
+        };
+
+        tdCancelAccept: tdCancelAccept {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDCANCELACCEPT";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp C_KEYBOARD_INPUT_ASSIST_CANCEL>,
+                <&kp C_KEYBOARD_INPUT_ASSIST_ACCEPT>;
+        };
     };
 
     keymap {
@@ -260,20 +300,20 @@
         num_layer_4 {
             label = "NUM";
             bindings = <
-        &kp LEFT_ALT       &kp N9  &kp N8  &kp N7    &kp PLUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_ALT
-        &kp RIGHT_ALT      &kp N6  &kp N5  &kp N4    &kp MINUS       &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_ALT
-&trans  &tdCircAcuteGrave  &kp N3  &kp N2  &kp N1    &kp ASTERISK    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &tdCircAcuteGrave  &trans
-                                   &kp N0  &kp FSLH  &kp ENTER       &kp KP_ENTER  &kp FSLH         &kp KP_NUMBER_0
+                &kp LEFT_ALT       &kp N9  &kp N8  &kp N7    &kp PLUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_ALT
+                &kp RIGHT_ALT      &kp N6  &kp N5  &kp N4    &kp MINUS       &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_ALT
+&kp KP_NUMLOCK  &tdCircAcuteGrave  &kp N3  &kp N2  &kp N1    &kp ASTERISK    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &tdCircAcuteGrave  &kp KP_NUMLOCK
+                                           &kp N0  &kp FSLH  &kp ENTER       &kp KP_ENTER  &kp FSLH         &kp KP_NUMBER_0
             >;
         };
 
         fn_layer_5 {
             label = "FN";
             bindings = <
-         &kp F11  &kp F12  &trans  &trans  &trans     &trans   &trans  &trans  &kp F12  &kp F11
-         &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp F10  &kp F9  &kp F8  &kp F7   &kp F6
-&kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp F5   &kp F4  &kp F3  &kp F2   &kp F1   &kp ESC
-                           &trans  &trans  &trans     &trans   &trans  &trans
+         &kp F11  &kp F12  &kp PRINTSCREEN  &trans  &trans     &trans   &trans  &kp PRINTSCREEN  &kp F12  &kp F11
+         &kp F6   &kp F7   &kp F8           &kp F9  &kp F10    &kp F10  &kp F9  &kp F8           &kp F7   &kp F6
+&kp ESC  &kp F1   &kp F2   &kp F3           &kp F4  &kp F5     &kp F5   &kp F4  &kp F3           &kp F2   &kp F1   &kp ESC
+                           &trans           &trans  &trans     &trans   &trans  &trans
             >;
         };
 
@@ -300,20 +340,20 @@
         nav_layer_8 {
             label = "SYS";
             bindings = <
-           &studio_unlock  &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &sys_reset     &sys_reset   &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &trans  &studio_unlock
-           &trans          &trans  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &bootloader    &bootloader  &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &trans  &trans
-&soft_off  &trans          &trans  &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &trans         &trans       &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &trans  &trans          &soft_off
-                                   &trans                                      &trans                                  &trans         &trans       &trans                                  &trans
+           &studio_unlock  &kp PAGE_DOWN   &kp UP_ARROW     &kp PAGE_UP                         &sys_reset        &sys_reset      &kp C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP  &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP  &trans  &studio_unlock
+           &trans          &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT                           &bootloader       &bootloader     &kp C_KEYBOARD_INPUT_ASSIST_NEXT        &kp C_KEYBOARD_INPUT_ASSIST_PREVIOUS        &trans  &trans
+&soft_off  &trans          &trans          &kp DOWN         &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT  &studio_unlock    &studio_unlock  &kp C_KEYBOARD_INPUT_ASSIST_ACCEPT      &kp C_KEYBOARD_INPUT_ASSIST_CANCEL          &trans  &trans          &soft_off
+                                           &tdCancelAccept  &tdNextPrevGrp                      &tdNextPrev       &trans          &tdNextPrevGrp                          &soft_off
             >;
         };
 
         sys_layer_9 {
             label = "NAV";
             bindings = <
-        &trans  &trans  &trans                   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP              &kp C_VOLUME_UP  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                   &trans                &trans                       &trans           &trans  &trans  &trans  &trans  &trans
-                        &mt C_REWIND C_PREVIOUS  &kp C_PLAY_PAUSE      &mt C_FAST_FORWARD C_NEXT    &trans           &trans  &trans
+          &trans          &trans  &trans                   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP              &kp C_VOLUME_UP  &trans  &trans  &trans  &trans
+          &trans          &trans  &trans                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute      &trans  &trans  &trans  &trans
+&kp CLCK  &kp SCROLLLOCK  &trans  &trans                   &trans                &trans                       &trans           &trans  &trans  &trans  &trans  &trans
+                                  &mt C_REWIND C_PREVIOUS  &kp C_PLAY_PAUSE      &mt C_FAST_FORWARD C_NEXT    &trans           &trans  &trans
             >;
         };
     };
