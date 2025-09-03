@@ -213,7 +213,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDSS";
             #binding-cells = <0>;
-            bindings = <&kp S>, <&kp DE_SHARP_S>; <&kp DE_CAPITAL_SHARP_S>;
+            bindings = <&kp S>, <&kp DE_SHARP_S>, <&kp DE_CAPITAL_SHARP_S>;
         };
 
         tdCircAcuteGrave: tdCircAcuteGrave {
