@@ -350,10 +350,10 @@
         nav_layer_8 {
             label = "SYS";
             bindings = <
-           &studio_unlock      &kp PAGE_DOWN   &kp UP_ARROW     &kp PAGE_UP     &sys_reset        &sys_reset      &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN   &studio_unlock
-           &kp K_CONTEXT_MENU  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT       &bootloader       &bootloader     &kp RIGHT    &kp DOWN_ARROW  &kp LEFT_ARROW  &kp K_CONTEXT_MENU
-&soft_off  &trans              &kp END         &kp DOWN         &kp HOME        &studio_unlock    &studio_unlock  &kp HOME     &kp DOWN        &kp END         &trans              &soft_off
-                                               &tdCancelAccept  &tdNextPrevGrp  &tdNextPrev       &trans          &tdNextPrev  &tdNextPrevGrp
+           &trans  &kp PAGE_DOWN   &kp UP_ARROW        &kp PAGE_UP     &sys_reset        &sys_reset      &kp PAGE_UP     &kp UP_ARROW        &kp PAGE_DOWN   &trans
+           &trans  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &bootloader       &bootloader     &kp RIGHT       &kp DOWN_ARROW      &kp LEFT_ARROW  &trans
+&soft_off  &trans  &kp END         &kp K_CONTEXT_MENU  &kp HOME        &studio_unlock    &studio_unlock  &kp HOME        &kp K_CONTEXT_MENU  &kp END         &trans  &soft_off
+                                   &tdCancelAccept     &tdNextPrevGrp  &tdNextPrev       &tdNextPrev     &tdNextPrevGrp  &tdCancelAccept
             >;
         };
 
