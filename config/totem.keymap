@@ -142,6 +142,16 @@
             bindings = <&kp LG(LS(S))>;
             key-positions = <37 36>;
         };
+
+        winL {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <23 24>;
+        };
+
+        winR {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <27 28>;
+        };
     };
 
     behaviors {
