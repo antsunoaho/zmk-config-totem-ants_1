@@ -300,10 +300,10 @@
         coding_layer_rev_3 {
             label = "CODEREV";
             bindings = <
-            &kp KP_PLUS      &kp PERCENT      &kp SINGLE_QUOTE  &kp GREATER_THAN  &kp RBRC             &kp LBRC          &kp LESS_THAN    &kp DOUBLE_QUOTES  &kp DOLLAR    &kp GRAVE
-            &kp AT_SIGN      &kp EXCLAMATION  &kp FSLH          &kp UNDERSCORE    &kp RBKT             &kp LBKT          &kp EQUAL        &kp BSLH           &kp QUESTION  &kp CARET
-&kp ESCAPE  &kp KP_MULTIPLY  &kp HASH         &kp ASTERISK      &kp PLUS          &kp RPAR             &kp LPAR          &kp MINUS        &kp PIPE           &kp TILDE     &kp DEL    &kp ESCAPE
-                                              &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_CONTROL    &kp LEFT_CONTROL  &kp RIGHT_ARROW  &kp LEFT_ARROW
+            &kp KP_PLUS      &kp PERCENT      &kp SINGLE_QUOTE  &kp GREATER_THAN  &kp RBRC             &kp LBRC          &kp LESS_THAN   &kp DOUBLE_QUOTES  &kp DOLLAR    &kp GRAVE
+            &kp AT_SIGN      &kp EXCLAMATION  &kp FSLH          &kp UNDERSCORE    &kp RBKT             &kp LBKT          &kp EQUAL       &kp BSLH           &kp QUESTION  &kp CARET
+&kp ESCAPE  &kp KP_MULTIPLY  &kp HASH         &kp ASTERISK      &kp PLUS          &kp RPAR             &kp LPAR          &kp MINUS       &kp PIPE           &kp TILDE     &kp DEL    &kp ESCAPE
+                                              &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_CONTROL    &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
@@ -350,9 +350,9 @@
         nav_layer_8 {
             label = "SYS";
             bindings = <
-           &trans  &kp PAGE_DOWN   &kp UP_ARROW        &kp PAGE_UP     &sys_reset        &sys_reset      &kp PAGE_UP     &kp UP_ARROW        &kp PAGE_DOWN   &trans
-           &trans  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &bootloader       &bootloader     &kp RIGHT       &kp DOWN_ARROW      &kp LEFT_ARROW  &trans
-&soft_off  &trans  &kp END         &kp K_CONTEXT_MENU  &kp HOME        &studio_unlock    &studio_unlock  &kp HOME        &kp K_CONTEXT_MENU  &kp END         &trans  &soft_off
+           &trans  &kp PAGE_DOWN   &kp UP_ARROW        &kp PAGE_UP     &sys_reset        &sys_reset      &kp PAGE_UP     &kp UP_ARROW        &kp PAGE_DOWN  &trans
+           &trans  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &bootloader       &bootloader     &kp LEFT        &kp DOWN_ARROW      &kp RIGHT      &trans
+&soft_off  &trans  &kp END         &kp K_CONTEXT_MENU  &kp HOME        &studio_unlock    &studio_unlock  &kp HOME        &kp K_CONTEXT_MENU  &kp END        &trans  &soft_off
                                    &tdCancelAccept     &tdNextPrevGrp  &tdNextPrev       &tdNextPrev     &tdNextPrevGrp  &tdCancelAccept
             >;
         };
