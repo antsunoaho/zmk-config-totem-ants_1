@@ -19,6 +19,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#include "keys_de.h"
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -155,6 +157,14 @@
     };
 
     behaviors {
+        tap_dance {
+            tap-term-ms = <300>;
+        };
+
+        tap_hold {
+            tap-term-ms = <300>;
+        };
+
         tdSpRe: tdSpRe {
             compatible = "zmk,behavior-tap-dance";
             label = "TDSPRE";
@@ -182,28 +192,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDAE";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp SQT>;
+            bindings = <&kp A>, <&kp DE_A_UMLAUT>;
         };
 
         tdOe: tdOe {
             compatible = "zmk,behavior-tap-dance";
             label = "TDOE";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&kp SEMICOLON>;
+            bindings = <&kp O>, <&kp DE_O_UMLAUT>;
         };
 
         tdUe: tdUe {
             compatible = "zmk,behavior-tap-dance";
             label = "TDUE";
             #binding-cells = <0>;
-            bindings = <&kp U>, <&kp LEFT_BRACKET>;
+            bindings = <&kp U>, <&kp DE_U_UMLAUT>;
         };
 
         tdSs: tdSs {
             compatible = "zmk,behavior-tap-dance";
             label = "TDSS";
             #binding-cells = <0>;
-            bindings = <&kp S>, <&kp MINUS>;
+            bindings = <&kp S>, <&kp DE_SHARP_S>; <&kp DE_CAPITAL_SHARP_S>;
         };
 
         tdCircAcuteGrave: tdCircAcuteGrave {
