@@ -234,15 +234,7 @@
 			, <&macro_release &kp LALT>
 			;
 		};
-		sz_capital: sz_capital {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <40>;
-			tap-ms = <40>;
-			bindings
-			= <&macro_tap     &kp S>
-			, <&macro_tap     &kp
-	};}
+	}
 	
 	behaviors {
 		tap_dance {
