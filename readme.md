@@ -1,6 +1,9 @@
 escape nav
-better switches
-indep finger push and frequency adjust
+indep finger push and frequency adjust 
+direct: tab alt shift ctrl esc win arrows del backsp enter space 
+switches on layout 
+more chords 
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_dark.svg">
