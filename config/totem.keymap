@@ -495,22 +495,22 @@
         };
 
         nav_layer_8 {
-            label = "SYS";
+            label = "NAV_8";
             bindings = <
-           &trans  &kp PAGE_DOWN   &kp UP_ARROW        &kp PAGE_UP     &sys_reset        &sys_reset      &kp PAGE_UP     &kp UP_ARROW        &kp PAGE_DOWN  &trans
-           &trans  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &bootloader       &bootloader     &kp LEFT        &kp DOWN_ARROW      &kp RIGHT      &trans
-&soft_off  &trans  &kp END         &kp K_CONTEXT_MENU  &kp HOME        &studio_unlock    &studio_unlock  &kp HOME        &kp K_CONTEXT_MENU  &kp END        &trans  &soft_off
-                                   &tdCancelAccept     &tdNextPrevGrp  &tdNextPrev       &tdNextPrev     &tdNextPrevGrp  &tdCancelAccept
+        &trans          &kp PAGE_DOWN   &kp UP_ARROW        &kp PAGE_UP     &trans             &trans          &kp PAGE_UP     &kp UP_ARROW        &kp PAGE_DOWN  &trans
+        &msc SCRL_LEFT  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &msc SCRL_RIGHT    &msc SCRL_LEFT  &kp LEFT        &kp DOWN_ARROW      &kp RIGHT      &msc SCRL_RIGHT
+&trans  &trans          &kp END         &kp K_CONTEXT_MENU  &kp HOME        &trans             &trans          &kp HOME        &kp K_CONTEXT_MENU  &kp END        &trans           &trans
+                                        &tdCancelAccept     &tdNextPrevGrp  &tdNextPrev        &tdNextPrev     &tdNextPrevGrp  &tdCancelAccept
             >;
         };
 
         sys_layer_9 {
-            label = "NAV";
+            label = "SYS_9";
             bindings = <
-          &trans          &trans  &trans                   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP              &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &trans                   &trans  &trans
-          &kp INSERT      &trans  &trans                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute                &kp C_BRIGHTNESS_DEC  &trans                   &trans  &kp INSERT
-&kp CLCK  &kp SCROLLLOCK  &trans  &trans                   &trans                &trans                       &trans                     &trans                &trans                   &trans  &kp SCROLLLOCK  &kp CAPSLOCK
-                                  &mt C_REWIND C_PREVIOUS  &kp C_PLAY_PAUSE      &mt C_FAST_FORWARD C_NEXT    &mt C_FAST_FORWARD C_NEXT  &kp C_PLAY_PAUSE      &mt C_REWIND C_PREVIOUS
+          &sys_reset      &bootloader  &studio_unlock           &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP              &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &studio_unlock           &bootloader  &sys_reset
+          &kp INSERT      &trans       &trans                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute                &kp C_BRIGHTNESS_DEC  &trans                   &trans       &kp INSERT
+&kp CLCK  &kp SCROLLLOCK  &soft_off    &trans                   &trans                &trans                       &trans                     &trans                &trans                   &soft_off    &kp SCROLLLOCK  &kp CAPSLOCK
+                                       &mt C_REWIND C_PREVIOUS  &kp C_PLAY_PAUSE      &mt C_FAST_FORWARD C_NEXT    &mt C_FAST_FORWARD C_NEXT  &kp C_PLAY_PAUSE      &mt C_REWIND C_PREVIOUS
             >;
         };
     };
