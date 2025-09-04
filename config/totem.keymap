@@ -136,22 +136,52 @@
 
         winShSL {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <32 33>;
+            key-positions = <24 25>;
         };
 
         winShSR {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <37 36>;
+            key-positions = <26 27>;
         };
 
         winL {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <23 24>;
+            key-positions = <32 33>;
         };
 
         winR {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <27 28>;
+            key-positions = <36 37>;
+        };
+
+        escL {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 10>;
+        };
+
+        escR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 19>;
+        };
+
+        ctrL {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 11>;
+        };
+
+        ctrR {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 18>;
+        };
+
+        altL {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <10 11>;
+        };
+
+        altR {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <19 18>;
         };
     };
 
@@ -266,7 +296,7 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <275>;
         };
 
         tdBkDe: tdBkDe {
@@ -387,10 +417,10 @@
         base_0 {
             label = "BASE";
             bindings = <
-           &kp Q  &kp W  &kp E                      &kp R               &kp T      &kp Y    &tdUe              &kp I                  &tdOe       &tdPUePlus
-           &tdAe  &tdSs  &kp D                      &kp F               &kp G      &kp H    &kp J              &kp K                  &kp L       &kp SEMICOLON
-&tdShCwCa  &kp Z  &kp X  &kp C                      &kp V               &kp B      &kp N    &kp M              &kp COMMA              &kp PERIOD  &kp SLASH      &kp SQT
-                         &mt LEFT_CONTROL QUESTION  &mt LEFT_ALT TILDE  &tdSpRe    &tdBkDe  &mt RIGHT_ALT TAB  &mt RCTRL EXCLAMATION
+           &kp Q  &kp W  &kp E      &kp R    &kp T      &kp Y    &tdUe    &kp I      &tdOe       &tdPUePlus
+           &tdAe  &tdSs  &kp D      &kp F    &kp G      &kp H    &kp J    &kp K      &kp L       &kp SEMICOLON
+&tdShCwCa  &kp Z  &kp X  &kp C      &kp V    &kp B      &kp N    &kp M    &kp COMMA  &kp PERIOD  &kp SLASH      &kp SQT
+                         &tdShCwCa  &tdBkDe  &tdSpRe    &tdSpRe  &tdBkDe  &tdShCwCa
             >;
         };
 
