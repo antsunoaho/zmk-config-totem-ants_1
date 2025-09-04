@@ -234,7 +234,7 @@
 			, <&macro_release &kp LALT>
 			;
 		};
-	}
+	};
 	
 	behaviors {
 		tap_dance {
