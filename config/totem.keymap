@@ -24,11 +24,6 @@
     combos {
         compatible = "zmk,combos";
 
-        to_diac {
-            bindings = <&mo 0>;      // assumes DIAC layer ID 10
-            key-positions = <4 5>;    // choose a comfortable pair
-        };
-
         to0l {
             bindings = <&to 0>;
             key-positions = <0 10>;
@@ -161,12 +156,12 @@
 
         escL {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 10>;
+            key-positions = <33 34>;
         };
 
         escR {
             bindings = <&kp ESCAPE>;
-            key-positions = <16 19>;
+            key-positions = <35 36>;
         };
 
         ctrL {
