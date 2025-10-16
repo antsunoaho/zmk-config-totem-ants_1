@@ -24,6 +24,11 @@
     combos {
         compatible = "zmk,combos";
 
+        to_diac {
+          bindings = <&mo 10>;      // assumes DIAC layer ID 10
+          key-positions = <4 5>;    // choose a comfortable pair
+        };
+
         to0l {
             bindings = <&to 0>;
             key-positions = <0 10>;
@@ -186,6 +191,13 @@
     };
 
     macros {
+
+        ctrl_alt_del: ctrl_alt_del {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&macro_tap &kp LC(LALT(DEL))>;
+        };
+
         a_umlaut_small: a_umlaut_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -508,10 +520,21 @@
             label = "SYS_9";
             bindings = <
           &sys_reset      &bootloader  &studio_unlock           &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP              &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &studio_unlock           &bootloader  &sys_reset
-          &kp INSERT      &trans       &trans                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute                &kp C_BRIGHTNESS_DEC  &trans                   &trans       &kp INSERT
-&kp CLCK  &kp SCROLLLOCK  &soft_off    &trans                   &trans                &trans                       &trans                     &trans                &trans                   &soft_off    &kp SCROLLLOCK  &kp CAPSLOCK
+          &kp INSERT      &kp LG(LS(S))       &kp LG(L)                   &kp C_BRIGHTNESS_DEC  &tdVoldMute                  &tdVoldMute                &kp C_BRIGHTNESS_DEC  &kp LG(L)                   &kp LG(LS(S))       &kp INSERT
+&kp CLCK  &kp SCROLLLOCK  &soft_off    &kp C_PLAY_PAUSE                   &mt C_REWIND C_PREVIOUS                &mt C_FAST_FORWARD C_NEXT                       &mt C_FAST_FORWARD C_NEXT                     &mt C_REWIND C_PREVIOUS                &kp C_PLAY_PAUSE                   &soft_off    &kp SCROLLLOCK  &kp CAPSLOCK
                                        &mt C_REWIND C_PREVIOUS  &kp C_PLAY_PAUSE      &mt C_FAST_FORWARD C_NEXT    &mt C_FAST_FORWARD C_NEXT  &kp C_PLAY_PAUSE      &mt C_REWIND C_PREVIOUS
             >;
         };
+
+        diacritics_10 {
+          label = "DIAC_10";
+          bindings = <
+            &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_CARET   &kp DE_TILDE  &kp DE_DQT
+            &kp RA(A)      &kp DE_A_UMLAUT &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_SQT
+            &macro_ctrl_alt_del         &trans         &trans         &trans        &trans        &macro_ctrl_alt_del
+            &trans &trans &trans  &trans &trans &trans
+          >;
+        };
+
     };
 };
