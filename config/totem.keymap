@@ -26,82 +26,82 @@
 
         to0l {
             bindings = <&to 0>;
-            key-positions = <0 10>;
+            key-positions = <12 13>;
         };
 
         to0r {
             bindings = <&to 0>;
-            key-positions = <19 9>;
+            key-positions = <16 17>;
         };
 
         to1l {
             bindings = <&to 1>;
-            key-positions = <1 11>;
+            key-positions = <11 12>;
         };
 
         to1r {
             bindings = <&to 1>;
-            key-positions = <8 18>;
+            key-positions = <18 17>;
         };
 
         to2l {
             bindings = <&to 2>;
-            key-positions = <2 12>;
+            key-positions = <12 24>;
         };
 
         to2r {
             bindings = <&to 2>;
-            key-positions = <7 17>;
+            key-positions = <17 27>;
         };
 
         to3l {
             bindings = <&to 3>;
-            key-positions = <3 13>;
+            key-positions = <13 23>;
         };
 
         to3r {
             bindings = <&to 3>;
-            key-positions = <6 16>;
+            key-positions = <16 28>;
         };
 
         to4l {
             bindings = <&to 4>;
-            key-positions = <21 10>;
+            key-positions = <12 3>;
         };
 
         to4r {
             bindings = <&to 4>;
-            key-positions = <30 19>;
+            key-positions = <6 17>;
         };
 
         to5l {
             bindings = <&to 5>;
-            key-positions = <11 22>;
+            key-positions = <12 4>;
         };
 
         to5r {
             bindings = <&to 5>;
-            key-positions = <29 18>;
+            key-positions = <17 5>;
         };
 
         to6l {
             bindings = <&to 6>;
-            key-positions = <23 12>;
+            key-positions = <12 14>;
         };
 
         to6r {
             bindings = <&to 6>;
-            key-positions = <28 17>;
+            key-positions = <17 15>;
         };
 
         to7l {
             bindings = <&to 7>;
-            key-positions = <24 13>;
+            key-positions = <12 25>;
         };
 
         to7r {
             bindings = <&to 7>;
-            key-positions = <27 16>;
+            key-positions = <17 26>;
         };
 
         to8l {
@@ -116,12 +116,12 @@
 
         to9l {
             bindings = <&to 9>;
-            key-positions = <12 3>;
+            key-positions = <11 13>;
         };
 
         to9r {
             bindings = <&to 9>;
-            key-positions = <17 6>;
+            key-positions = <16 18>;
         };
 
         winSpR {
