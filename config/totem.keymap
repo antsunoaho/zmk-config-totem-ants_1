@@ -192,12 +192,6 @@
 
     macros {
 
-        ctrl_alt_del: ctrl_alt_del {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&macro_tap &kp LC(LALT(DEL))>;
-        };
-
         a_umlaut_small: a_umlaut_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -531,7 +525,7 @@
           bindings = <
             &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_CARET   &kp DE_TILDE  &kp DE_DQT
             &kp RA(A)      &kp DE_A_UMLAUT &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_SQT
-            &macro_ctrl_alt_del         &trans         &trans         &trans        &trans        &macro_ctrl_alt_del
+            &trans         &trans         &trans         &trans        &trans        &trans
             &trans &trans &trans  &trans &trans &trans
           >;
         };
