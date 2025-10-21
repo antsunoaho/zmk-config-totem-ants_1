@@ -126,12 +126,12 @@
 
         winSpR {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <31 37>;
+            key-positions = <37 29>;
         };
 
         winSpL {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <20 32>;
+            key-positions = <32 22>;
         };
 
         winL {
