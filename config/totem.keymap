@@ -116,62 +116,72 @@
 
         to9l {
             bindings = <&to 9>;
-            key-positions = <11 23>;
+            key-positions = <22 24>;
         };
 
         to9r {
             bindings = <&to 9>;
-            key-positions = <18 28>;
+            key-positions = <27 29>;
         };
 
         winSpR {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <19 31 30>;
+            key-positions = <31 37>;
         };
 
         winSpL {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <20 21 10>;
+            key-positions = <20 32>;
         };
 
         winL {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <21 22>;
+            key-positions = <21 32>;
         };
 
         winR {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <30 29>;
+            key-positions = <37 30>;
         };
 
         escL {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <20 21>;
         };
 
         escR {
             bindings = <&kp ESCAPE>;
-            key-positions = <9 8>;
+            key-positions = <31 30>;
         };
 
         ctrL {
             bindings = <&kp LCTRL>;
-            key-positions = <10 22>;
+            key-positions = <32 33>;
         };
 
         ctrR {
             bindings = <&kp RCTRL>;
-            key-positions = <19 29>;
+            key-positions = <36 37>;
         };
 
         altL {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <20 21>;
+            key-positions = <32 34>;
         };
 
         altR {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <31 30>;
+            key-positions = <35 37>;
+        };
+
+        shiftL {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <33 34>;
+        };
+
+        shiftR {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <36 35>;
         };
     };
 
