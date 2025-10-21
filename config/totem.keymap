@@ -26,12 +26,12 @@
 
         to0l {
             bindings = <&to 0>;
-            key-positions = <12 13>;
+            key-positions = <22 23>;
         };
 
         to0r {
             bindings = <&to 0>;
-            key-positions = <16 17>;
+            key-positions = <29 28>;
         };
 
         to1l {
@@ -46,142 +46,132 @@
 
         to2l {
             bindings = <&to 2>;
-            key-positions = <12 24>;
+            key-positions = <1 2>;
         };
 
         to2r {
             bindings = <&to 2>;
-            key-positions = <17 27>;
+            key-positions = <7 8>;
         };
 
         to3l {
             bindings = <&to 3>;
-            key-positions = <13 23>;
+            key-positions = <23 24>;
         };
 
         to3r {
             bindings = <&to 3>;
-            key-positions = <16 28>;
+            key-positions = <28 27>;
         };
 
         to4l {
             bindings = <&to 4>;
-            key-positions = <12 3>;
+            key-positions = <12 13>;
         };
 
         to4r {
             bindings = <&to 4>;
-            key-positions = <6 17>;
+            key-positions = <17 16>;
         };
 
         to5l {
             bindings = <&to 5>;
-            key-positions = <12 4>;
+            key-positions = <2 3>;
         };
 
         to5r {
             bindings = <&to 5>;
-            key-positions = <17 5>;
+            key-positions = <7 6>;
         };
 
         to6l {
             bindings = <&to 6>;
-            key-positions = <12 14>;
+            key-positions = <25 24>;
         };
 
         to6r {
             bindings = <&to 6>;
-            key-positions = <17 15>;
+            key-positions = <26 27>;
         };
 
         to7l {
             bindings = <&to 7>;
-            key-positions = <12 25>;
+            key-positions = <13 14>;
         };
 
         to7r {
             bindings = <&to 7>;
-            key-positions = <17 26>;
+            key-positions = <15 16>;
         };
 
         to8l {
             bindings = <&to 8>;
-            key-positions = <12 24>;
+            key-positions = <3 4>;
         };
 
         to8r {
             bindings = <&to 8>;
-            key-positions = <17 27>;
+            key-positions = <5 6>;
         };
 
         to9l {
             bindings = <&to 9>;
-            key-positions = <11 13>;
+            key-positions = <11 23>;
         };
 
         to9r {
             bindings = <&to 9>;
-            key-positions = <16 18>;
+            key-positions = <18 28>;
         };
 
         winSpR {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <5 6>;
+            key-positions = <19 31 30>;
         };
 
         winSpL {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <4 3>;
-        };
-
-        winShSL {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <24 25>;
-        };
-
-        winShSR {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <26 27>;
+            key-positions = <20 21 10>;
         };
 
         winL {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <32 33>;
+            key-positions = <21 22>;
         };
 
         winR {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <36 37>;
+            key-positions = <30 29>;
         };
 
         escL {
             bindings = <&kp ESCAPE>;
-            key-positions = <33 34>;
+            key-positions = <0 1>;
         };
 
         escR {
             bindings = <&kp ESCAPE>;
-            key-positions = <35 36>;
+            key-positions = <9 8>;
         };
 
         ctrL {
             bindings = <&kp LCTRL>;
-            key-positions = <12 11>;
+            key-positions = <10 22>;
         };
 
         ctrR {
             bindings = <&kp RCTRL>;
-            key-positions = <17 18>;
+            key-positions = <19 29>;
         };
 
         altL {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <10 11>;
+            key-positions = <20 21>;
         };
 
         altR {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <19 18>;
+            key-positions = <31 30>;
         };
     };
 
